@@ -1,0 +1,33 @@
+.slider {
+    .container {
+        position: relative;
+        height: 610px;
+        width: 970px;
+        overflow: hidden;
+        padding: 0;
+
+        ul#slides {
+            position: relative;
+            width: 99999999px;
+            margin: 14px 0;
+            padding: 0;
+
+            li {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 970px;
+                height: 582px;
+                z-index: 1;
+
+                img {
+                    width: 970px;
+                }
+
+                &.active {
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
